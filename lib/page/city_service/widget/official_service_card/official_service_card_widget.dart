@@ -1,3 +1,4 @@
+dart
 import 'package:flutter/material.dart';
 import 'package:town_pass/page/city_service/widget/official_service_card/official_service_card_bottom_left.dart';
 import 'package:town_pass/page/city_service/widget/official_service_card/official_service_card_bottom_right.dart';
@@ -30,7 +31,11 @@ class OfficialServiceCardWidget extends StatelessWidget {
             ],
           ),
           TableRow(
-            children: List.filled(3, const SizedBox(height: 8.0)),
+            children: const [
+              SizedBox(height: 8.0),
+              SizedBox.shrink(),
+              SizedBox(height: 8.0),
+            ],
           ),
           const TableRow(
             children: [
